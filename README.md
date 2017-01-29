@@ -4,6 +4,7 @@ A twitter bot that returns the twitter handles of your Senators
 Simply tweet your 5 digit zipcode and Congress Bot will return your state's Senators and their twitter handle(s). 
 Built with python and uses a sqlite db.
 
+Working Example [Congress Bot](https://twitter.com/congress_bot)
 
 ## To Use
 
