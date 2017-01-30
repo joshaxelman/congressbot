@@ -47,7 +47,7 @@ class CongressBot:
             search_name = "%" + firstname + ' ' + lastname + "%"
             cur.execute("SELECT name, twitter_handle FROM house_twitter WHERE name like ?", (search_name, ))
             twitter_handles.append(cur.fetchone())
-            return twitter_handles
+        return twitter_handles
 
     def twitter_replies(self, config):
         print (config)
