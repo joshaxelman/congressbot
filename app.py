@@ -93,7 +93,7 @@ class CongressBot:
                         message = '@' + user + ' ' + reply
                         if len(results) > 0:
                             try:
-                                #api.update_status(message, tweet.id)
+                                api.update_status(message, tweet.id)
                                 print(message)
                             except Exception, e:
                                 print " - failed (maybe a duplicate?): %s" % e
@@ -110,7 +110,7 @@ class CongressBot:
                         message = '@' + user + ' ' + reply
                         if rep:
                             try:
-                                #api.update_status(message, tweet.id)
+                                api.update_status(message, tweet.id)
                                 print(message)
                             except Exception, e:
                                 print " - failed (maybe a duplicate?): %s" % e
