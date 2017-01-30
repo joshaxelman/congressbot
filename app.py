@@ -105,10 +105,11 @@ class CongressBot:
                         reply = 'Demand action from your Reps '
                         for rep in twitter_handles:
                             if rep:
+                                has_rep = True
                                 print(rep[0] + ' ' + rep[1])
                                 reply = reply + rep[0] + ' ' + rep[1]
                         message = '@' + user + ' ' + reply
-                        if rep:
+                        if has_rep:
                             try:
                                 api.update_status(message, tweet.id)
                                 print(message)
