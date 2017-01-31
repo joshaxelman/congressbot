@@ -19,4 +19,7 @@ Working Example [Congress Bot](https://twitter.com/congress_bot)
 
 
 ## Todo
-1. Add House of Representatives
+1. Remove debug statements
+2. Break up twitter_stream method. Create a separate twitter class, congress class.
+3. Find more people to launch more bots
+4. Automate updates 
