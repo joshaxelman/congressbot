@@ -3,14 +3,16 @@ import yaml
 import tweepy
 import json
 import time
+import os
 import sqlite3
 
 class CongressBot:
 
     def __init__(self):
-        with open('env.yaml', 'r') as f:
+        path = os.path.dirname(os.path.abspath(__file__))
+        with open(path + '/env.yaml', 'r') as f:
             config = yaml.load(f)
-        self.db = sqlite3.connect('data/congress.db', isolation_level=None)
+        self.db = sqlite3.connect(path + '/data/congress.db', isolation_level=None)
         self.twitter_replies(config)
         #self.get_house_rep('90048')
         self.db.close()
